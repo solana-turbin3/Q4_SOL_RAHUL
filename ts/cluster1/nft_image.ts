@@ -19,8 +19,13 @@ umi.use(signerIdentity(signer));
         //2. Convert image to generic file.
         //3. Upload image
 
+<<<<<<< HEAD
         const image = await readFile('/Users/artimus100/Desktop/CaelumX/caelumx/public/images/logo.jpg');
         const genericFile = createGenericFile(image, 'Carbon-Credit',{contentType: 'image/png'});
+=======
+        const image = await readFile('/Users/artimus100/Desktop/turbin3/DEAN-WBA.png');
+        const genericFile = createGenericFile(image, 'NFT-Dogpound-Charity',{contentType: 'image/png'});
+>>>>>>> cdf4e54 (.)
         const [myUri] = await umi.uploader.upload([genericFile]); 
         
         console.log("Your metadata URI: ", myUri.replace("arweave.net", "devnet.irys.xyz"));
